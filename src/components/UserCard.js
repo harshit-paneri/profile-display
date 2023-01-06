@@ -5,7 +5,7 @@ const UserCard = () => {
   return (
     <section className="bg-slate-200 drop-shadow-lg rounded-xl mx-auto  p-8 text-black font-bold ">
       {!singleUser ? (
-        <div className="p-10 text-xl ">Click User Data by clicking random bottom</div>
+        <div className="p-10 text-xl ">Display User Data by clicking random bottom</div>
       ) : (
         <figure className="flex justify-between">
           <img
