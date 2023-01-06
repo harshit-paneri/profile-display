@@ -13,12 +13,13 @@ const App = () => {
   }, [dispatch]);
 
   return (
-    <div className="h-[100vh] w-[100vw] bg-gradient-to-r from-sky-800 to-indigo-800 flex flex-col align-middle justify-center">
+    <div className="h-[100vh] w-[100vw] bg-gradient-to-r from-sky-800 to-aqua-800 flex flex-col align-middle justify-center">
       <UserCard />
       <footer className="mx-auto mt-[5rem] space-x-6 text-white font-extrabold  ">
         {[...Array(totalUsers)].map((el, idx) => (
           <button
-            className="text-xl rounded-xl  p-4 px-6 drop-shadow-lg bg-violet-500 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300"
+          // className="text-xl rounded-xl  p-4 px-6 drop-shadow-lg bg-violet-500 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300"
+            className="text-xl rounded-xl  p-4 px-6 drop-shadow-lg bg-blue-500 hover:bg-green-600 active:bg-green-700 focus:outline-none focus:ring focus:ring-violet-300"
             key={idx}
             onClick={() => {
               dispatch(getSingleUser(idx + 1));

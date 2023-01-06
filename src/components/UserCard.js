@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 const UserCard = () => {
   const { singleUser } = useSelector((store) => store.users);
   return (
-    <section className="bg-slate-800 drop-shadow-lg rounded-xl mx-auto  p-8 text-white font-bold ">
+    <section className="bg-slate-200 drop-shadow-lg rounded-xl mx-auto  p-8 text-black font-bold ">
       {!singleUser ? (
         <div className="p-10 text-xl ">Click User Data by clicking random bottom</div>
       ) : (
